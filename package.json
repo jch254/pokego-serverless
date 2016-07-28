@@ -1,0 +1,11 @@
+{
+  "name": "pokego-serverless",
+  "version": "1.0.0",
+  "description": "Serverless-powered Pokemon Go API",
+  "author": "Jordan Hornblow",
+  "license": "MIT",
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "pokemon-go-node-api": "^1.3.0"
+  }
+}

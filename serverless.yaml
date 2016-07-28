@@ -1,0 +1,26 @@
+service: pokego-serverless
+provider: aws
+runtime: nodejs4.3
+defaults:
+   stage: dev
+   region: us-east-1
+   memory: 512
+   timeout: 60
+
+functions:
+    getPokegoNearby:
+        handler: handler.getPokegoNearby
+        memory: 512
+        timeout: 60
+        events:
+          - http:
+              path: nearby
+              method: get
+    getPokegoNearbyRaw:
+        handler: handler.getPokegoNearbyRaw
+        memory: 512
+        timeout: 60
+        events:
+          - http:
+              path: nearbyraw
+              method: get
